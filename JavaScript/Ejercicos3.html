@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+   var num1,num2;
+
+   num1 = prompt('INGRESE EL PRIMER NUMERO','');
+   num2= prompt('INGRESE EL SEGUNDO NUMERO','');
+
+   num1= parseInt(num1);
+   num2= parseInt(num2);
+
+   if (num1 > num2){
+       var suma,resta;
+       suma = num1 + num2;
+       resta = num1 - num2; 
+       document.write('SU SUMA ES:' + suma);
+       document.write ('<br>');
+       document.write('SU RESTA ES: ' + resta);
+   } 
+   else{
+       var mult,div;
+       mult= num1 * num2;
+       div= num1 / num2;
+       document.write('SU MULTIPLICACION ES:'+ mult);
+       document.write ('<br>');
+       document.write ('SU DIVISION ES: ' + div); 
+   }
+
+</script>
+
+</body>
+</html>
+    
