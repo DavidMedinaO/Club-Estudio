@@ -7,6 +7,32 @@
 <body>
 
 <script>
+var nombre,preguntas,correctas,porcentaje;
+
+nombre = prompt('INGRESE SU NOMBRE');
+preguntas = parseInt(prompt('INGRESE EL NUMERO DE PREGUNTAS QUE LE REALIZARON'));
+correctas = parseInt(prompt('INGRSE EL NUMERO DE RESPUESTAS CORRECTAS'));
+
+porcentaje = (correctas*100) / preguntas;
+
+if(porcentaje >= 90){
+
+  document.write(nombre + ' su porcentaje es de ' + porcentaje +'% es decir de NIVEL SUPERIOR');
+}
+else{
+  if(porcentaje >= 75){
+
+    document.write(nombre + ' su porcentaje es de ' + porcentaje +'% es decir de NIVEL MEDIO');
+  }
+  else{
+    if(porcentaje >= 50){
+      document.write(nombre + ' su porcentaje es de ' + porcentaje +'% es decir de NIVEL REGULAR');
+    }
+    else{
+      document.write(nombre + ' su porcentaje es de ' + porcentaje +'% es decir de FUERA DE NIVEL');
+    }
+  }
+}
 
 </script>
 
