@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) 
+luego mostrar la palabra traducida en inglés. 
+Es decir, si se ingresa 'casa' debemos mostrar el texto 'house' en la página.*/
+
+var palabra;
+
+palabra= prompt('INGRESE ALGUNA DE LAS SIGUIENTES PALABRAS: "gato", "perro", "mesa", "casa", para traducirla al ingles');
+
+switch (palabra){
+
+    case 'gato': document.write('CAT');
+                 break;
+    case 'perro': document.write('DOG');
+                  break;
+    case 'mesa': document.write('TABLE');
+                 break;
+    case 'casa': document.write('HOUSE');
+                 break;
+    default: document.write('DEBE INGRESAR UNA PALABRA DEL MENU');                        
+
+}
+
+</script>
+
+</body>
+</html>
