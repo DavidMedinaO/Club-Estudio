@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejercicio de JavaScript</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+
+<script>
+/*En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500, 
+realizar un programa que lea los sueldos que cobra cada empleado e informe 
+cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300. 
+Además el programa deberá informar el importe que gasta la empresa en sueldos al personal.*/
+
+var x,acumMenor,acumMayor;
+
+x=0;
+acumMayor=0;
+acumMenor=0;
+while(x<5){
+  var sueldo;
+  sueldo=parseInt(prompt('INGRESE SU SUELDO'));
+
+  if(sueldo<=300){
+    acumMenor++;
+  }
+  else{
+    acumMayor++;
+  }
+
+  x++;
+}
+
+document.write('EL NUMERO DE EMPLEADOS QUE TIENE SUELDOS MENORES A 300 SON: '+acumMenor);
+document.write('<br>');
+document.write('EL NUMERO DE EMPLEADOS QUE TIENEN UN SUELDO SUPERIOR A 300 SON: '+ acumMayor);
+</script>
+
+</body>
+</html>
+    
